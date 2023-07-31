@@ -7,24 +7,21 @@ public class Car {
     private String color;
 
     public Car() {
-     this(2045, 500,4, "green");
+     this(2045);
     }
 
     public Car(int year) {
-        this.year = year;
+        this(year,234);
 
     }
 
     public Car(int year, double speed) {
         this(year,speed,34);
-        this.year = year;
+
     }
 
     public Car(int year, double speed, int weight) {
-        this();
-        this.year = year;
-        this.speed = speed;
-        this.weight = weight;
+        this(year,speed,weight,"yellow");
     }
 
     public Car(int year, double speed, int weight, String color) {
